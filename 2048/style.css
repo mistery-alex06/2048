@@ -1,0 +1,90 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    background: radial-gradient(circle at 50% 50%, #13031c 0%, #0a0112 100%);
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.game-container {
+    width: 380px;
+    max-width: 90vw;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.8rem;
+    background: linear-gradient(135deg, #34d399 0%, #c084fc 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.score-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: #a78bfa;
+}
+
+#score {
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+.game-board {
+    width: 100%;
+    aspect-ratio: 1;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+.tile {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    transition: all 0.15s ease-in-out;
+}
+
+.instructions {
+    margin-top: 18px;
+    text-align: center;
+    color: #d8b4fe;
+    font-size: 0.85rem;
+}
+
+/* Color Scale Palette */
+.tile[data-val="2"] { background: #065f46; color: #fff; }
+.tile[data-val="4"] { background: #047857; color: #fff; }
+.tile[data-val="8"] { background: #059669; color: #fff; }
+.tile[data-val="16"] { background: #10b981; color: #fff; }
+.tile[data-val="32"] { background: #34d399; color: #13031c; }
+.tile[data-val="64"] { background: #6ee7b7; color: #13031c; }
+.tile[data-val="128"] { background: #8b5cf6; color: #fff; font-size: 1.4rem; }
+.tile[data-val="256"] { background: #7c3aed; color: #fff; font-size: 1.4rem; }
+.tile[data-val="512"] { background: #6d28d9; color: #fff; font-size: 1.4rem; }
+.tile[data-val="1024"] { background: #5b21b6; color: #fff; font-size: 1.1rem; }
+.tile[data-val="2048"] { background: #4c1d95; color: #fff; font-size: 1.1rem; box-shadow: 0 0 15px #c084fc; }
