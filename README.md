@@ -10,6 +10,6 @@ Fai attenzione a non saturare le risorse: quando la griglia è piena e non ci so
 Clona la repo e lancia il progetto per iniziare subito a scalare la classifica! 
 
 ```bash
-git clone [https://github.com/tuo-username/2048.git](https://github.com/tuo-username/2048.git)
+git clone [https://github.com/mistery-alex06/2048.git](https://github.com/mistery-alex06/2048.git)
 cd 2048
 # Avvia il progetto secondo lo stack tecnologico utilizzato
